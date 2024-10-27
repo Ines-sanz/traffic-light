@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 //include images into your bundle
-import  rojo from "../../img/rojo.png";
+import  background from "../../img/background.png";
 
 //create your first component
 const Home = () => {
@@ -9,22 +9,21 @@ const Home = () => {
 
 	const changeColor = (col) =>{
 		setColor(col)
+		console.log
 	}
 	
 	return (
-		<div className="container-fluid">
-		<div className="d-flex flex-column align-items-center justify-content-center bg-dark">
-			<div onClick={()=> (color!= 'rojo') ? changeColor('rojo') : changeColor(' ') } className={color==='rojo' ? 'iluminao rojo my-2': 'rojo my-2'} ></div>
-			<img 
-					src={rojo} 
-					onClick={() => (color !== 'rojo') ? changeColor('rojo') : changeColor('')}
-					className={color === 'rojo' ? 'rojo__light' : 'rojo__none'}
-				/>
-			<div onClick={()=> (color!= 'naranja') ? changeColor('naranja') : changeColor(' ')} className={color==='naranja' ? 'iluminao naranja my-2': 'naranja my-2'}></div>
-			<div onClick={()=> (color!= 'verde') ? changeColor('verde') : changeColor(' ')} className={color==='verde' ? 'iluminao verde my-2': 'verde my-2'}></div>
-	
+		<div className="container-fluid m-0 p-0 myContainer">
+		<div className="d-flex flex-column align-items-center justify-content-center">
+			<div onClick={()=> (color!= 'red') ? changeColor('red') : changeColor(' ')} className="red"></div>
+			<div className={color==='red' ? 'r-light': 'r-dark'} ></div>
+			<div onClick={()=> (color!= 'orange') ? changeColor('orange') : changeColor(' ')} className='orange'></div>
+			<div className={color==='orange' ? 'o-light': 'o-dark'} ></div>
+			<div onClick={()=> (color!= 'green') ? changeColor('green') : changeColor(' ')} className='green'></div>
+			<div className={color==='green' ? 'g-light': 'g-dark'} ></div>
+	<img src={background} alt="background" className="myBg"/>
 		</div>
-		</div>
+		</div> 
 	);
 };
 

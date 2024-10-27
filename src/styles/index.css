@@ -9,54 +9,83 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
-.bici {
-    height: 150px;
-    width: 150px;
-    background-color: rgb(172, 169, 169);
-    border-radius: 20%;
-  }
-  .rojo {
-    height: 150px;
-    width: 150px;
-    background-color: rgb(116, 3, 3);
+*{
+  margin: 0;
+  padding: 0;
+}
+.myContainer{
+  max-width: 100vw;
+  max-height: 100vh;
+}
+.myBg{
+position: fixed;
+top: 0;
+  background-position: center center;
+  z-index: 1;
+  width: 100%;
+}
+
+  .red {
+   margin-top: 6%;
+    height: 13vw;
+    width: 13vw;
     border-radius: 50%;
+    z-index: 2;
   }
-  .rojo.iluminao {
-    background-color: red;
+  .r-light {
+    margin-top: -11%;
+    background-color: rgb(235, 4, 4);
+    height: 13vw;
+    width: 13vw;
+    z-index: -1;
   }
-  .rojo__light {
-    top:-15px;
-    left: calc(50% - 100px);
-    background-image: url(../img/rojo.png);
-    mix-blend-mode: lighten ;
-    opacity: 0.5;
-    position: fixed;
-    background-size: cover;
-    width: 200px;
-    height: 200px;
-    z-index: 100;
+  .r-dark {
+    margin-top: -11%;
+    background-color: rgb(0, 0, 0);
+    height: 13vw;
+    width: 13vw;
+    border-radius: 50%;
+    z-index: -1;
   }
-  .rojo__none{
-      display: none;
+  .orange {
+    height: 13vw;
+    width: 13vw;
+    z-index: 2;
+  }
+  .o-light {
+    margin-top: -13%;
+    height: 13vw;
+    width: 13vw;
+    z-index: -1;
+    background-color: rgb(255, 136, 0);
+  }
+  .o-dark {
+    margin-top: -13%;
+    height: 13vw;
+    width: 13vw;
+    z-index: -1;
+    background-color: rgb(0, 0, 0);
   }
   
-  .verde {
-    height: 150px;
-    width: 150px;
-    background-color: rgb(2, 74, 2);
-    border-radius: 50%;
+  .green {
+    height: 13vw;
+    width: 13vw;
+   z-index: 2;
   }
-  .verde.iluminao {
-    background-color: rgb(4, 165, 4);
+  .g-light {
+    margin-top: -13%;
+    height: 13vw;
+    width: 13vw;
+    z-index: -1;
+    background-color: green;
+  }
+  .g-dark {
+    margin-top: -13%;
+    height: 13vw;
+    width: 13vw;
+    z-index: -1;
+    background-color: rgb(0, 0, 0);
   }
   
-  .naranja {
-    height: 150px;
-    width: 150px;
-    background-color: rgb(138, 92, 4);
-    border-radius: 50%;
-  }
-  .naranja.iluminao {
-    background-color: orange;
-  }
+  
   
