@@ -1,15 +1,22 @@
 import React, { useState } from "react";
 
 //include images into your bundle
-import  background from "../../img/background.png";
+import  lightBg from "../../img/light.png";
+import  darkBg from "../../img/dark.png";
 
 //create your first component
 const Home = () => {
 	const [color, setColor] = useState('')
+	const [mode, setMode] = useState('light')
 
 	const changeColor = (col) =>{
 		setColor(col)
-		console.log
+		
+	}
+
+	const changeMode = (mod) =>{
+		setMode(mode === 'light' ? 'dark' : 'light');
+		console.log(mod)
 	}
 
 	const randomLights = () => {
@@ -25,6 +32,7 @@ const Home = () => {
 		}, 5000);
 	};
 	
+
 	return (
 		<div className="container-fluid m-0 p-0 myContainer">
 		<div className="d-flex flex-column align-items-center justify-content-center">
@@ -35,8 +43,10 @@ const Home = () => {
 			<div onClick={()=> (color!= 'green') ? changeColor('green') : changeColor(' ')} className='green'></div>
 			<div className={color==='green' ? 'g-light': ''} ></div>
 			<div className="dark"></div>
-			<button className="myButton" onClick={randomLights}>RANDOM LIGHTS</button>
-	<img src={background} alt="background" className="myBg"/>
+			<button className="myMode" onClick={changeMode}>{mode === 'light' ? 'Dark Mode' : 'Light Mode'}</button>
+			<button className="myButton" onClick={randomLights}>Random Lights</button>
+	<img src={lightBg} alt="background" className={mode==='light' ? 'myBgLight': 'myBgDark'}/>
+	<img src={darkBg} alt="background" className="darkBg"/>
 		</div>
 		</div> 
 	);
