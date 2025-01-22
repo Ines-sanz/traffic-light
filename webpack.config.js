@@ -21,9 +21,9 @@ module.exports = {
     './src/js/index.js'
   ],
   output: {
-    filename: './bundle.js',
+    filename: 'bundle.js',
     path: path.resolve(__dirname, 'public'),
-    publicPath: '/traffic-light/'
+    publicPath: '.'
   },
   module: {
     rules: [
@@ -58,7 +58,7 @@ module.exports = {
     allowedHosts: "all",
     historyApiFallback: true,
     static: {
-      directory: path.resolve(__dirname, "dist"),
+      directory: path.resolve(__dirname, "public"),
     },
     client: {
       webSocketURL: publicUrl
@@ -66,7 +66,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      favicon: './public/favicon.ico',
+      favicon: './favicon.ico',
       template: 'template.html'
     }),
   ]
