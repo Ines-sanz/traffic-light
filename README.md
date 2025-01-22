@@ -1,42 +1,50 @@
 <!-- PROJECT LOGO -->
 <p align="center">
 
-  <h1 align="center">Traffic Light</h1>
+  <h1 align="center">Traffic Light 🚦</h1>
 
   <h3 align="center">
-   A Simple Java Script practice exercise but make it cool!
+    A Simple JavaScript practice exercise but with a cool design!
   </h3>
- <br />
- 
-
+  <br />
 </p>
 
-<!-- ABOUT THE PROJECT -->
+---
 
-## The Project:-
+## The Project
 ![Traffic Light Preview](https://res.cloudinary.com/dtr9ffwyc/image/upload/v1737542582/traffic-light-preview_yiisc3.png)
 
+This is a simple yet fun project designed to practice JavaScript, React, and styling skills. It mimics the functionality of a traffic light with an added touch of creativity.
 
-#### The funtionalities are:-
+### Functionalities:
 
-- The user can light the traffic light color by color
-- The user can light the traffic light in secuences of random lights
-- The user can switch between light and dark mode
-- Great design wich is allways a plus!
+- The user can light the traffic light color by color 🔴🟡🟢
+- The user can activate sequences of random lights 🎲
+- The user can switch between light and dark mode 🌕🌑
+- Stylish design that makes it stand out! ✨
 
-### Built With
+---
 
-- #### React
-- #### React Bootstrap
-- #### Java Script
-- #### CSS
-- ### HTML
+## Built With
 
-<!-- GETTING STARTED -->
+- **React**
+- **React Bootstrap**
+- **JavaScript**
+- **CSS**
+- **HTML**
 
-# Getting Started
+---
 
-### To run project:-
+## Getting Started ☝🏻
+
+To get started with this project, follow these steps:
+
+1. Clone the repository:
+   
+   git clone https://github.com/Ines-sanz/traffic-light.git
+
+###  To run project:
+#### `cd traffic-light`
 
 ### `npm install`
 
