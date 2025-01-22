@@ -21,9 +21,9 @@ module.exports = {
     './src/js/index.js'
   ],
   output: {
-    filename: 'bundle.js',
+    filename: './bundle.js',
     path: path.resolve(__dirname, 'public'),
-    publicPath: '/'
+    publicPath: '/traffic-light/'
   },
   module: {
     rules: [
@@ -65,13 +65,9 @@ module.exports = {
     },
   },
   plugins: [
-    new webpack.HotModuleReplacementPlugin(),
-    // new ESLintPlugin({
-    //   files: path.resolve(__dirname, "src"),
-    // }),
     new HtmlWebpackPlugin({
-        favicon: 'favicon.ico',
-        template: 'template.html'
+      favicon: './public/favicon.ico',
+      template: 'template.html'
     }),
   ]
 };
