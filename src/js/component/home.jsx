@@ -3,6 +3,7 @@ import React, { useState } from "react";
 //include images into your bundle
 import  lightBg from "../../img/light.png";
 import  darkBg from "../../img/dark.png";
+import  cursor from "../../img/cursor.png";
 
 //create your first component
 const Home = () => {
@@ -34,7 +35,7 @@ const Home = () => {
 	
 
 	return (
-		<div className="container-fluid m-0 p-0 myContainer">
+		<div className="container-fluid m-0 p-0 myContainer" >
 		<div className="d-flex flex-column align-items-center justify-content-center">
 			<div onClick={()=> (color!= 'red') ? changeColor('red') : changeColor(' ')} className="red"></div>
 			<div className={color==='red' ? 'r-light': ''} ></div>
