@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 
 //include images into your bundle
-import  lightBg from "../../img/light.png";
-import  darkBg from "../../img/dark.png";
 import  cursor from "../../img/cursor.png";
 import  pointer from "../../img/pointer.png";
 
@@ -47,8 +45,8 @@ const Home = () => {
 			<div className="dark"></div>
 			<button className="myMode" onClick={changeMode} style={{ cursor: `url(${pointer})16 16, auto` }}>{mode === 'light' ? 'Dark Mode' : 'Light Mode'}</button>
 			<button className="myButton" onClick={randomLights} style={{ cursor: `url(${pointer})16 16, auto` }}>Random Lights</button>
-	<img src={lightBg} alt="background" className={mode==='light' ? 'myBgLight': 'myBgDark'}/>
-	<img src={darkBg} alt="background" className="darkBg"/>
+	<img src="https://res.cloudinary.com/dtr9ffwyc/image/upload/v1737541774/light_kyoi3x.png" alt="background" className={mode==='light' ? 'myBgLight': 'myBgDark'}/>
+	<img src="https://res.cloudinary.com/dtr9ffwyc/image/upload/v1737541774/dark_r5e4em.png" alt="background" className="darkBg"/>
 		</div>
 		</div> 
 	);
