@@ -43,9 +43,7 @@ To get started with this project, follow these steps:
    
    git clone https://github.com/Ines-sanz/traffic-light.git
 
-###  To run project:
-#### `cd traffic-light`
-
+2. Run the project:
+### `cd traffic-light`
 ### `npm install`
-
 ### `npm run start`
