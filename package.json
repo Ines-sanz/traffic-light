@@ -1,5 +1,5 @@
 {
-	"name": "react-hello",
+	"name": "Traffic Light",
 	"version": "1.0.1",
 	"engines": {
 		"node": "16.x"
@@ -11,8 +11,6 @@
 		"build": "webpack --mode development",
 		"deploy:github": "node deploy-to-github.js"
 	},
-	"author": "Alejandro Sanchez",
-	"license": "ISC",
 	"devDependencies": {
 		"@babel/cli": "^7.16.0",
 		"@babel/core": "^7.16.0",
