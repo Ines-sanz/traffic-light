@@ -9,7 +9,6 @@
   <br />
 </p>
 
----
 
 ## The Project
 ![Traffic Light Preview](https://res.cloudinary.com/dtr9ffwyc/image/upload/v1737542582/traffic-light-preview_yiisc3.png)
