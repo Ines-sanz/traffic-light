@@ -6,7 +6,7 @@
 		"node": "16.x"
 	},
 	"description": "",
-	"main": "index.js",
+	"main": "src/js/index.js",
 	"scripts": {
 		 "start": "webpack-dev-server --mode development --host 0.0.0.0 --open",
 		"build": "webpack --mode development",
