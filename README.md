@@ -14,7 +14,7 @@
 ![Traffic Light Preview](https://res.cloudinary.com/dtr9ffwyc/image/upload/v1737542582/traffic-light-preview_yiisc3.png)
 
 This is a simple yet fun project designed to practice JavaScript, React, and styling skills. It mimics the functionality of a traffic light with an added touch of creativity.
-
+### 🌐 [Click here for the live demo ➡️ Traffic Light](https://traffic-light-kcv3.onrender.com/)
 ### Functionalities:
 
 - The user can light the traffic light color by color 🔴🟡🟢
